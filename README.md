@@ -10,7 +10,7 @@ Full Guide: https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop
 
 With multiple Desktops i like sddm more.
 
-Or use sddm insetad of gdm.
+Or use sddm instead of gdm.
 
 ## Extensions:
 
