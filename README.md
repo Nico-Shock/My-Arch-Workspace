@@ -86,3 +86,35 @@ sudo pacman -S ptyxis
 ```
 gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROFILE'/' 'opacity' '0.70'
 ```
+
+# KDE Plasma:
+
+## Installation:
+
+```
+yay kvantum
+```
+
+### Details:
+
+- Install the Orchis theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings  
+- Personalize the taskbar – it always changes depending on how I like to customize it  
+- (Maybe I will try Latte Dock in the future)
+
+# General Things:
+
+### Fonts:
+
+https://fonts.google.com/specimen/Inter
+
+- I use the Semi Bold one
+
+### Mouse Cursor:
+
+- Bibata Cursor: https://github.com/ful1e5/Bibata_Cursor/releases  
+- Windows XP Modern Cursor: https://www.pling.com/find?search=Windows%20xp%20cursor  
+- Maybe other cursors – I always like to change it a bit
+
+### Icons:
+
+- yay tela-circle-icon-theme
