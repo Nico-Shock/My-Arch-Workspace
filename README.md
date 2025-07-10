@@ -57,18 +57,30 @@ System Monitor
 flatpak install flathub com.mattjakeman.ExtensionManager
 
 ### WhiteSur Themes:
+```
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
 cd WhiteSur-gtk-theme  
 ./install.sh -l  
 cd ..  
 sudo rm -r WhiteSur-gtk-theme
+```
 
 ### Zsh:
-sudo pacman -S zsh  
+```
+sudo pacman -S zsh
+```
+``` 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc  
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
+```
 chsh -s $(which zsh)
+```
 
 ### Terminal:
-sudo pacman -S ptyxis  
+```
+sudo pacman -S ptyxis
+```
+```
 gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROFILE'/' 'opacity' '0.70'
+```
