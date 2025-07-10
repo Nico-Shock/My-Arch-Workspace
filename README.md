@@ -160,3 +160,4 @@ yay tela-circle-icon-theme
 ## Other Themes:
 
 For "veraltete Anwendungen": https://github.com/kayozxo/GNOME-macOS-Tahoe
+or: https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme
