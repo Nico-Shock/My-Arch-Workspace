@@ -1,5 +1,13 @@
 # Gnome Setup:
 
+## Installation:
+
+```
+pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm
+```
+
+Or use sddm insetad of gdm.
+
 ## Extensions:
 
 - Application and KStatusNotifierItem Support (optional)  
@@ -89,7 +97,13 @@ gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROF
 
 # KDE Plasma:
 
-## Installation:
+## Insterllation:
+
+```
+sudo pacman -S plasma konsole
+```
+
+## Installations:
 
 ```
 yay kvantum
