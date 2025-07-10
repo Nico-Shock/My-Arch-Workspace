@@ -126,4 +126,6 @@ https://fonts.google.com/specimen/Inter
 
 ### Icons:
 
-- yay tela-circle-icon-theme
+```
+yay tela-circle-icon-theme
+```
