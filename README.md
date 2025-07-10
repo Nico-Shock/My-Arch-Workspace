@@ -129,3 +129,7 @@ https://fonts.google.com/specimen/Inter
 ```
 yay tela-circle-icon-theme
 ```
+
+## Other Themes:
+
+For "veraltete Anwendungen": https://github.com/kayozxo/GNOME-macOS-Tahoe
