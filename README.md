@@ -103,11 +103,11 @@ yay kvantum
 
 ### Settings:
 
-- Window Management + Desktop Effects: still finding some:
+- Fensterverwaltung + Arbeitsflächen Effekte: still finding some:
 
-- Hover  
-- Transparency: set everything to the same settings (very opaque)  
-- Blur  
+- Schweben (hover effect)  
+- Transparenz: set everything to the same settings (very opaque)  
+- Verwischen (blur effect)  
 - Maybe some other effects in the future
 
 # General Things:
