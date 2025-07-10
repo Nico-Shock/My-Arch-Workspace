@@ -113,7 +113,7 @@ yay kvantum
 
 ### Details:
 
-- Install the Orchis theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings  
+- Install the Layan theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings  
 - Personalize the taskbar – it always changes depending on how I like to customize it  
 - (Maybe I will try Latte Dock in the future)
 
