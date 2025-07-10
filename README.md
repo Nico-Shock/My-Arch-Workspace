@@ -2,19 +2,19 @@
 
 ## Extensions:
 
-Application and KStatusNotifierItem Support (optional)  
-Blur My Shell  
-Just Perfection  
-Dash to Dock  
-Arc Menu  
-Coverflow  
-Impatience  
-Gnome 4x UI Improvements  
-Caffeine  
-Tiling Shell (optional)  
-Open Bar  
-User Themes  
-System Monitor
+- Application and KStatusNotifierItem Support (optional)  
+- Blur My Shell  
+- Just Perfection  
+- Dash to Dock  
+- Arc Menu  
+- Coverflow  
+- Impatience  
+- Gnome 4x UI Improvements  
+- Caffeine  
+- Tiling Shell (optional)  
+- Open Bar  
+- User Themes  
+- System Monitor
 
 ## Extension Settings:
 
