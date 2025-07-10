@@ -54,7 +54,9 @@
 ## Commands:
 
 ### Extensions Manager Installation:
+```
 flatpak install flathub com.mattjakeman.ExtensionManager
+```
 
 ### WhiteSur Themes:
 ```
