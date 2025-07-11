@@ -144,7 +144,7 @@ yay kvantum
 
 ### Theme
 
-- Global Settings Theme: Utterly Nord  
+- Global Settings Theme: Utterly Nord + Utterly Nord Kvantum Theme
 - Konsole Theme: Utterly Nord Solid with 40% Transparency
 
 ### Desktop Effects
