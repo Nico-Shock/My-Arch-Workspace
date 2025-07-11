@@ -68,13 +68,20 @@ With multiple Desktops i like sddm more.
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
-### WhiteSur Themes:
+### WhiteSur Theme:
 ```
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
 cd WhiteSur-gtk-theme  
 ./install.sh -l  
 cd ..  
 sudo rm -r WhiteSur-gtk-theme
+```
+
+### Tokyonight Theme:
+```
+git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
+cd Tokyonight-GTK-Theme/themes
+./install -l --tweaks black macos
 ```
 
 ### Zsh:
