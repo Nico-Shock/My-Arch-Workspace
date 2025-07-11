@@ -135,10 +135,6 @@ yay kvantum
 
 ### Konsole
 
-```
-sudo pacman -S konsole
-```
-
 - In Settings, create a new profile and set it as default  
 - In Erscheinungsbild (Appearance), search for new color schemes  
 - I use the aritim-dark theme for now  
