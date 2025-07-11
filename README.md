@@ -126,6 +126,17 @@ yay kvantum
 - Verwischen (blur effect)  
 - Maybe some other effects in the future
 
+# KDE Plasma 2
+
+### Theme
+
+- Global Settings Theme: Utterly Nord  
+- Konsole Theme: Utterly Nord Solid with 40% Transparency
+
+### Desktop Effects
+
+- Blur: everything at level 6 (from left)
+
 ### Konsole
 
 ```
@@ -161,3 +172,25 @@ yay tela-circle-icon-theme
 
 For "veraltete Anwendungen": https://github.com/kayozxo/GNOME-macOS-Tahoe
 or: https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme
+
+## Taskbar (designed like a dock) and Top Bar
+
+- Top Bar default layout from the Utterly theme but with the system menu removed  
+- Top Bar should have the grey icon from this repo  
+- The taskbar/dock should have the blue "andere" default Arch logo  
+- The taskbar/dock should keep the download shortcut
+
+## Screenshots (Images are not perfectly accurate)
+
+### KDE:
+
+<img width="1920" height="1078" alt="image" src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" />
+
+
+### KDE 2:
+
+<img width="1922" height="1077" alt="image" src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" />
+
+### Gnome:
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
