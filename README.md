@@ -126,6 +126,17 @@ yay kvantum
 - Verwischen (blur effect)  
 - Maybe some other effects in the future
 
+### Konsole
+
+```
+sudo pacman -S konsole
+```
+
+- In Settings, create a new profile and set it as default  
+- In Erscheinungsbild (Appearance), search for new color schemes  
+- I use the aritim-dark theme for now  
+- Then select the theme, click on edit, and set the background blur to something like 20
+
 # KDE Plasma 2
 
 ### Theme
@@ -136,17 +147,6 @@ yay kvantum
 ### Desktop Effects
 
 - Blur: everything at level 6 (from left)
-
-### Konsole
-
-```
-sudo pacman -S konsole
-```
-
-- In Settings, create a new profile and set it as default  
-- In Erscheinungsbild (Appearance), search for new color schemes  
-- I use the aritim-dark theme for now  
-- Then select the theme, click on edit, and set the background blur to something like 40 (default is 20)
 
 # General Things:
 
