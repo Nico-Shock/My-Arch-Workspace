@@ -84,6 +84,12 @@ cd Tokyonight-GTK-Theme/themes
 ./install -l --tweaks black macos
 ```
 
+## Gnome Tweaks
+
+- Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.
+- Set the Shell theme to `WhiteSur-Dark`
+- Set the other theme to the `Tokyonight` theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.
+
 ### Zsh:
 ```
 sudo pacman -S zsh
