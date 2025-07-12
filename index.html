@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Linux Workspace</title>
+  <title>Arch Linux Workspace Setup</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -13,59 +13,32 @@
       color: #d1d1d1;
       margin: 0;
       padding: 2rem;
-      display: flex;
-      justify-content: center;
-    }
-    main {
-      max-width: 1000px;
-      width: 100%;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
     }
     h1, h2, h3 {
       margin-top: 2rem;
       color: #f0f0f0;
     }
-    ul, p {
+    p, ul {
       line-height: 1.6;
+      margin-top: 0.5rem;
     }
-    .code-wrapper {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-      gap: 0.5rem;
+    ul {
+      padding-left: 1.5rem;
     }
     pre {
       background-color: #1b1e24;
       padding: 1rem;
       border: 1px solid #2c2f36;
-      margin: 0;
-      flex: 1;
+      margin: 0.5rem 0 1rem 0;
       overflow-x: auto;
       white-space: pre-wrap;
       word-break: break-word;
       border-radius: 0;
-    }
-    code {
       font-family: monospace;
       color: #dedede;
-    }
-    .copy-btn {
-      background-color: #353840;
-      color: #ffffff;
-      border: none;
-      border-radius: 8px;
-      padding: 0.5rem 0.9rem;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: 0.2s;
-      height: fit-content;
-      user-select: none;
-    }
-    .copy-btn:hover {
-      background-color: #4c4f56;
-    }
-    .copy-btn.copied {
-      background-color: #52c276;
-      color: #101010;
     }
     a {
       color: #a9b1d6;
@@ -81,24 +54,19 @@
     }
     img {
       max-width: 100%;
-      border: 1px solid #2a2d33;
       margin-top: 1rem;
+      border: 1px solid #2a2d33;
     }
   </style>
 </head>
 <body>
-<main>
 
 <p><a href="https://nico-shock.github.io/My-Arch-Workspace/" target="_blank">Hi!</a></p>
 
 <h1>Gnome Setup:</h1>
 
 <h2>Installation:</h2>
-<div class="code-wrapper">
-  <pre><code id="cmd1">pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd1')">Copy</button>
-</div>
-
+<pre>pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm &amp;&amp; systemctl enable gdm</pre>
 <p>Full Guide: <a href="https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment" target="_blank">https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment</a></p>
 <p>With multiple Desktops i like sddm more.</p>
 
@@ -160,31 +128,22 @@
 <h2>Commands:</h2>
 
 <h3>Extensions Manager Installation:</h3>
-<div class="code-wrapper">
-  <pre><code id="cmd2">flatpak install flathub com.mattjakeman.ExtensionManager</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd2')">Copy</button>
-</div>
+<pre>flatpak install flathub com.mattjakeman.ExtensionManager</pre>
 
 <h3>WhiteSur Theme:</h3>
-<div class="code-wrapper">
-  <pre><code id="cmd3">git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
+<pre>git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
 cd WhiteSur-gtk-theme  
 ./install.sh -l  
 cd ..  
-sudo rm -r WhiteSur-gtk-theme</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd3')">Copy</button>
-</div>
+sudo rm -r WhiteSur-gtk-theme</pre>
 
 <h3>Tokyonight Theme:</h3>
-<div class="code-wrapper">
-  <pre><code id="cmd4">git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
+<pre>git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
 cd Tokyonight-GTK-Theme/themes
 ./install.sh -l --tweaks black macos
 cd ..
 cd ..
-sudo rm -r Tokyonight-GTK-Theme</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd4')">Copy</button>
-</div>
+sudo rm -r Tokyonight-GTK-Theme</pre>
 
 <h2>Gnome Tweaks</h2>
 <ul>
@@ -193,54 +152,25 @@ sudo rm -r Tokyonight-GTK-Theme</code></pre>
   <li>Set the other theme to the <code>Tokyonight</code> theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.</li>
 </ul>
 
-<h2>Zsh:</h2>
-<div class="code-wrapper">
-  <pre><code id="cmd5">sudo pacman -S zsh</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd5')">Copy</button>
-</div>
+<h3>Zsh:</h3>
+<pre>sudo pacman -S zsh</pre>
+<pre>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' &gt;&gt;~/.zshrc</pre>
+<pre>chsh -s $(which zsh)</pre>
 
-<div class="code-wrapper">
-  <pre><code id="cmd6">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' &gt;&gt;~/.zshrc</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd6')">Copy</button>
-</div>
-
-<div class="code-wrapper">
-  <pre><code id="cmd7">chsh -s $(which zsh)</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd7')">Copy</button>
-</div>
-
-<h2>Terminal (Ptyxis):</h2>
-<div class="code-wrapper">
-  <pre><code id="cmd8">sudo pacman -S ptyxis</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd8')">Copy</button>
-</div>
-
-<div class="code-wrapper">
-  <pre><code id="cmd9">gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROFILE'/' 'opacity' '0.70'</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd9')">Copy</button>
-</div>
-
-<div class="code-wrapper">
-  <pre><code id="cmd10">yay -S ttf-dejavu-sans-mono-powerline-git</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd10')">Copy</button>
-</div>
-
+<h3>Terminal (Ptyxis):</h3>
+<pre>sudo pacman -S ptyxis</pre>
+<pre>gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROFILE'/' 'opacity' '0.70'</pre>
+<pre>yay -S ttf-dejavu-sans-mono-powerline-git</pre>
 <p>Select this font for the Ptyxis terminal.</p>
 
 <h1>KDE Plasma:</h1>
 
-<h2>Insterllation:</h2>
-<div class="code-wrapper">
-  <pre><code id="cmd11">sudo pacman -S plasma konsole</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd11')">Copy</button>
-</div>
+<h2>Installation:</h2>
+<pre>sudo pacman -S plasma konsole</pre>
 
 <h2>Installations:</h2>
-<div class="code-wrapper">
-  <pre><code id="cmd12">yay kvantum</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd12')">Copy</button>
-</div>
+<pre>yay kvantum</pre>
 
 <h3>Details:</h3>
 <ul>
@@ -295,10 +225,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' &gt;&gt;~/.zshrc</code></p
 </ul>
 
 <h3>Icons:</h3>
-<div class="code-wrapper">
-  <pre><code id="cmd13">yay tela-circle-icon-theme</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd13')">Copy</button>
-</div>
+<pre>yay tela-circle-icon-theme</pre>
 
 <h2>Other Themes:</h2>
 <ul>
@@ -315,38 +242,20 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' &gt;&gt;~/.zshrc</code></p
 </ul>
 
 <h2>Fonts:</h2>
-<div class="code-wrapper">
-  <pre><code id="cmd14">sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
-yay -S ttf-unifont ttf-symbola</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd14')">Copy</button>
-</div>
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
+<pre>sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+yay -S ttf-unifont ttf-symbola</pre>
+<img width="1918" height="1078" alt="theme preview" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
 
 <h2>Screenshots (Images are not perfectly accurate)</h2>
 
 <h3>KDE:</h3>
-<img width="1920" height="1078" alt="image" src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" />
+<img width="1920" height="1078" alt="KDE screenshot" src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" />
 
 <h3>KDE 2:</h3>
-<img width="1922" height="1077" alt="image" src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" />
+<img width="1922" height="1077" alt="KDE 2 screenshot" src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" />
 
 <h3>Gnome:</h3>
-<img width="2560" height="1440" alt="Bildschirmfoto vom 2025-07-12 23-04-22" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
+<img width="2560" height="1440" alt="Gnome screenshot" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
 
-<script>
-function copyToClipboard(button, id) {
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    button.classList.add('copied');
-    button.innerText = 'Copied!';
-    setTimeout(() => {
-      button.classList.remove('copied');
-      button.innerText = 'Copy';
-    }, 1500);
-  });
-}
-</script>
-
-</main>
 </body>
 </html>
