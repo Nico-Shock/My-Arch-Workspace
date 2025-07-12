@@ -194,6 +194,13 @@ or: https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme
 - The taskbar/dock should have the blue "andere" default Arch logo  
 - The taskbar/dock should keep the download shortcut
 
+## Fonts:
+
+```
+sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+yay -S ttf-unifont ttf-symbola
+```
+
 ## Screenshots (Images are not perfectly accurate)
 
 ### KDE:
