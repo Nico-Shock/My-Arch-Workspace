@@ -89,6 +89,8 @@
 <body>
 <main>
 
+<p><a href="https://nico-shock.github.io/My-Arch-Workspace/" target="_blank">Hi!</a></p>
+
 <h1>Gnome Setup:</h1>
 
 <h2>Installation:</h2>
@@ -96,7 +98,8 @@
   <pre><code id="cmd1">pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd1')">Copy</button>
 </div>
-<p>Full Guide: <a href="https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment" target="_blank">Arch‑Linux‑on‑Nvidia</a></p>
+
+<p>Full Guide: <a href="https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment" target="_blank">https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment</a></p>
 <p>With multiple Desktops i like sddm more.</p>
 
 <h2>Extensions:</h2>
@@ -117,6 +120,7 @@
 </ul>
 
 <h2>Extension Settings:</h2>
+
 <h3>Blur My Shell:</h3>
 <ul>
   <li>Default Rounded Pipeline: Radius 20, Brightness: 100</li>
@@ -151,9 +155,11 @@
 </ul>
 
 <h3>Open Bar:</h3>
-<p><a href="https://github.com/Nico-Shock/My-OpenBar-configs" target="_blank">My‑OpenBar‑configs</a></p>
+<p><a href="https://github.com/Nico-Shock/My-OpenBar-configs" target="_blank">https://github.com/Nico-Shock/My-OpenBar-configs</a></p>
 
 <h2>Commands:</h2>
+
+<h3>Extensions Manager Installation:</h3>
 <div class="code-wrapper">
   <pre><code id="cmd2">flatpak install flathub com.mattjakeman.ExtensionManager</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd2')">Copy</button>
@@ -161,10 +167,10 @@
 
 <h3>WhiteSur Theme:</h3>
 <div class="code-wrapper">
-  <pre><code id="cmd3">git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
-cd WhiteSur-gtk-theme
-./install.sh -l
-cd ..
+  <pre><code id="cmd3">git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
+cd WhiteSur-gtk-theme  
+./install.sh -l  
+cd ..  
 sudo rm -r WhiteSur-gtk-theme</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd3')">Copy</button>
 </div>
@@ -174,16 +180,17 @@ sudo rm -r WhiteSur-gtk-theme</code></pre>
   <pre><code id="cmd4">git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
 cd Tokyonight-GTK-Theme/themes
 ./install.sh -l --tweaks black macos
-cd ../..
+cd ..
+cd ..
 sudo rm -r Tokyonight-GTK-Theme</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd4')">Copy</button>
 </div>
 
-<h2>Gnome Tweaks:</h2>
+<h2>Gnome Tweaks</h2>
 <ul>
-  <li>Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.</li>
-  <li>Set the Shell theme to Whitesur-Dark</li>
-  <li>Set the other theme to the Tokyonight theme — this way, all apps stay compact thanks to the Whitesur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.</li>
+  <li>Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.</li>
+  <li>Set the Shell theme to <code>WhiteSur-Dark</code></li>
+  <li>Set the other theme to the <code>Tokyonight</code> theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.</li>
 </ul>
 
 <h2>Zsh:</h2>
@@ -193,8 +200,8 @@ sudo rm -r Tokyonight-GTK-Theme</code></pre>
 </div>
 
 <div class="code-wrapper">
-  <pre><code id="cmd6">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre>
+  <pre><code id="cmd6">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' &gt;&gt;~/.zshrc</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd6')">Copy</button>
 </div>
 
@@ -203,7 +210,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd7')">Copy</button>
 </div>
 
-<h2>Terminal:</h2>
+<h2>Terminal (Ptyxis):</h2>
 <div class="code-wrapper">
   <pre><code id="cmd8">sudo pacman -S ptyxis</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd8')">Copy</button>
@@ -214,24 +221,31 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre>
   <button class="copy-btn" onclick="copyToClipboard(this, 'cmd9')">Copy</button>
 </div>
 
+<div class="code-wrapper">
+  <pre><code id="cmd10">yay -S ttf-dejavu-sans-mono-powerline-git</code></pre>
+  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd10')">Copy</button>
+</div>
+
+<p>Select this font for the Ptyxis terminal.</p>
+
 <h1>KDE Plasma:</h1>
 
 <h2>Insterllation:</h2>
 <div class="code-wrapper">
-  <pre><code id="cmd10">sudo pacman -S plasma konsole</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd10')">Copy</button>
+  <pre><code id="cmd11">sudo pacman -S plasma konsole</code></pre>
+  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd11')">Copy</button>
 </div>
 
 <h2>Installations:</h2>
 <div class="code-wrapper">
-  <pre><code id="cmd11">yay kvantum</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd11')">Copy</button>
+  <pre><code id="cmd12">yay kvantum</code></pre>
+  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd12')">Copy</button>
 </div>
 
 <h3>Details:</h3>
 <ul>
   <li>Install the Layan theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings</li>
-  <li>Personalize the taskbar – it always changes depending on how I like to customize it</li>
+  <li>Personalize the taskbar – it always changes on how I like to customize it</li>
   <li>(Maybe I will try Latte Dock in the future)</li>
 </ul>
 
@@ -252,7 +266,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre>
   <li>Then select the theme, click on edit, and set the background blur to something like 20</li>
 </ul>
 
-<h2>KDE Plasma 2</h2>
+<h1>KDE Plasma 2</h1>
 
 <h3>Theme</h3>
 <ul>
@@ -265,29 +279,31 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre>
   <li>Blur: everything at level 6 (from left)</li>
 </ul>
 
-<h2>General Things:</h2>
+<h1>General Things:</h1>
 
 <h3>Fonts:</h3>
-<p><a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a></p>
-<ul><li>I use the Semi Bold one</li></ul>
+<p><a href="https://fonts.google.com/specimen/Inter" target="_blank">https://fonts.google.com/specimen/Inter</a></p>
+<ul>
+  <li>I use the Semi Bold one</li>
+</ul>
 
 <h3>Mouse Cursor:</h3>
 <ul>
   <li><a href="https://github.com/ful1e5/Bibata_Cursor/releases" target="_blank">Bibata Cursor</a></li>
-  <li><a href="https://www.pling.com/find?search=Windows%20xp%20cursor" target="_blank">Windows XP Cursor</a></li>
+  <li><a href="https://www.pling.com/find?search=Windows%20xp%20cursor" target="_blank">Windows XP Modern Cursor</a></li>
   <li>Maybe other cursors – I always like to change it a bit</li>
 </ul>
 
 <h3>Icons:</h3>
 <div class="code-wrapper">
-  <pre><code id="cmd12">yay tela-circle-icon-theme</code></pre>
-  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd12')">Copy</button>
+  <pre><code id="cmd13">yay tela-circle-icon-theme</code></pre>
+  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd13')">Copy</button>
 </div>
 
 <h2>Other Themes:</h2>
 <ul>
-  <li><a href="https://github.com/kayozxo/GNOME-macOS-Tahoe" target="_blank">GNOME‑macOS‑Tahoe</a></li>
-  <li><a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme" target="_blank">Tokyonight‑GTK‑Theme</a></li>
+  <li><a href="https://github.com/kayozxo/GNOME-macOS-Tahoe" target="_blank">https://github.com/kayozxo/GNOME-macOS-Tahoe</a></li>
+  <li><a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme" target="_blank">https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme</a></li>
 </ul>
 
 <h2>Taskbar (designed like a dock) and Top Bar</h2>
@@ -298,16 +314,24 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre>
   <li>The taskbar/dock should keep the download shortcut</li>
 </ul>
 
+<h2>Fonts:</h2>
+<div class="code-wrapper">
+  <pre><code id="cmd14">sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+yay -S ttf-unifont ttf-symbola</code></pre>
+  <button class="copy-btn" onclick="copyToClipboard(this, 'cmd14')">Copy</button>
+</div>
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
+
 <h2>Screenshots (Images are not perfectly accurate)</h2>
 
 <h3>KDE:</h3>
-<img src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" alt="KDE Screenshot" />
+<img width="1920" height="1078" alt="image" src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" />
 
 <h3>KDE 2:</h3>
-<img src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" alt="KDE 2 Screenshot" />
+<img width="1922" height="1077" alt="image" src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" />
 
 <h3>Gnome:</h3>
-<img src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" alt="Gnome Screenshot" />
+<img width="2560" height="1440" alt="Bildschirmfoto vom 2025-07-12 23-04-22" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
 
 <script>
 function copyToClipboard(button, id) {
