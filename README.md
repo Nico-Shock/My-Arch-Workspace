@@ -83,7 +83,10 @@ sudo rm -r WhiteSur-gtk-theme
 ```
 git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
 cd Tokyonight-GTK-Theme/themes
-./install -l --tweaks black macos
+./install.sh -l --tweaks black macos
+cd ..
+cd ..
+sudo rm -r Tokyonight-GTK-Theme
 ```
 
 ## Gnome Tweaks
