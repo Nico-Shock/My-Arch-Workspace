@@ -107,13 +107,18 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 chsh -s $(which zsh)
 ```
 
-### Terminal:
+### Terminal (Ptyxis):
 ```
 sudo pacman -S ptyxis
 ```
 ```
 gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROFILE'/' 'opacity' '0.70'
 ```
+```
+yay -S ttf-dejavu-sans-mono-powerline-git
+```
+
+- Select this font for the Ptyxis terminal.
 
 # KDE Plasma:
 
@@ -132,7 +137,7 @@ yay kvantum
 ### Details:
 
 - Install the Layan theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings  
-- Personalize the taskbar – it always changes depending on how I like to customize it  
+- Personalize the taskbar – it always changes depe<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />nding on how I like to customize it  
 - (Maybe I will try Latte Dock in the future)
 
 ### Settings:
@@ -198,7 +203,7 @@ or: https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme
 
 ```
 sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
-yay -S ttf-unifont ttf-symbola
+yay -S ttf-unifont ttf-symbola<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
 ```
 
 ## Screenshots (Images are not perfectly accurate)
