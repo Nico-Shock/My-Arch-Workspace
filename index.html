@@ -9,20 +9,20 @@
     :root {
       --bg: #0a0e1a;
       --panel: #1a1f2b;
-      --switch-silver: #c0c0c0;
-      --switch-teal: #00e6b8;
+      --switch-silver: #3498db;
+      --switch-teal: #ff6e32;
       --white: #f0f0f0;
       --gray-light: #6b7280;
       --border-gradient: linear-gradient(90deg, var(--switch-silver), var(--switch-teal));
-      --border-width: 2.0px;
+      --border-width: 2.3px;
       --max-width: 1100px;
       --transition-fast: 0.2s ease-in-out;
       --bg-light: #f1f5f9;
       --panel-light: #ffffff;
       --white-light: #1f2937;
       --gray-light-light: #4b5563;
-      --switch-silver-light: #d9d9d9;
-      --switch-teal-light: #33ffcc;
+      --switch-silver-light: #3498db;
+      --switch-teal-light: #ff6e32;
       --border-gradient-light: linear-gradient(90deg, var(--switch-silver-light), var(--switch-teal-light));
     }
 
@@ -78,7 +78,7 @@
       border-image: var(--border-gradient) 1;
       border-radius: 8px;
       user-select: none;
-      box-shadow: 0 2px 8px rgba(0, 230, 184, 0.2);
+      box-shadow: 0 2px 8px rgba(255, 110, 50, 0.2);
       transition: box-shadow var(--transition-fast);
       cursor: pointer;
     }
@@ -87,15 +87,15 @@
       background: var(--border-gradient-light);
       color: var(--white-light);
       border-image: var(--border-gradient-light) 1;
-      box-shadow: 0 2px 8px rgba(51, 255, 204, 0.15);
+      box-shadow: 0 2px 8px rgba(255, 110, 50, 0.15);
     }
 
     header:hover {
-      box-shadow: 0 4px 12px rgba(0, 230, 184, 0.3);
+      box-shadow: 0 4px 12px rgba(255, 110, 50, 0.3);
     }
 
     body.light-mode header:hover {
-      box-shadow: 0 4px 12px rgba(51, 255, 204, 0.2);
+      box-shadow: 0 4px 12px rgba(255, 110, 50, 0.2);
     }
 
     h1, h2, h3 {
