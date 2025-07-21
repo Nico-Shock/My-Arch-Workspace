@@ -261,11 +261,11 @@
 
     <h2>Installation</h2>
     <div class="code-container">
-      <pre>sudo pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm</pre>
+      <pre>pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm</pre>
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     </div>
     <p>Full Guide: <a href="https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment" target="_blank">Arch Linux on Nvidia</a></p>
-    <p>With multiple desktops, I prefer <code>sddm</code>.</p>
+    <p>With multiple Desktops I like <code>sddm</code> more.</p>
 
     <h2>Extensions</h2>
     <ul>
@@ -282,6 +282,7 @@
       <li>Open Bar</li>
       <li>User Themes</li>
       <li>System Monitor</li>
+      <li>Extension List</li>
     </ul>
 
     <h2>Extension Settings</h2>
@@ -289,7 +290,7 @@
     <h3>Blur My Shell</h3>
     <ul>
       <li>Default Rounded Pipeline: Radius 20, Brightness: 100</li>
-      <li>Panel: Dynamic: 29, Sigma: Brightness: 1.00</li>
+      <li>Panel: Dynamic: 30, Sigma: Brightness: 1.00</li>
       <li>Applications: Opaque focused windows: off, Blur in overview: off, Enable all by default: on, Disable manually: browser</li>
     </ul>
 
@@ -345,16 +346,17 @@ sudo rm -r WhiteSur-gtk-theme</pre>
       <pre>git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
 cd Tokyonight-GTK-Theme/themes
 ./install.sh -l --tweaks black macos
-cd ../..
+cd ..
+cd ..
 sudo rm -r Tokyonight-GTK-Theme</pre>
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     </div>
 
     <h2>Gnome Tweaks</h2>
     <ul>
-      <li>Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can affect font rendering in Ptyxis if "apply system font" is used.</li>
+      <li>Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.</li>
       <li>Set the Shell theme to <code>WhiteSur-Dark</code>.</li>
-      <li>Set the other theme to <code>Tokyonight</code> — this ensures compact apps with WhiteSur shell styling and Tokyo Night theme via libadwaita.</li>
+      <li>Set the other theme to the <code>Tokyonight</code> theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.</li>
     </ul>
 
     <h3>Zsh</h3>
@@ -386,7 +388,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     </div>
     <ul>
-      <li>Select <code>ttf-dejavu-sans-mono-powerline</code> font for Ptyxis.</li>
+      <li>Select this font for the Ptyxis terminal.</li>
     </ul>
 
     <h1>KDE Plasma</h1>
@@ -399,32 +401,32 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
 
     <h2>Installations</h2>
     <div class="code-container">
-      <pre>yay -S kvantum</pre>
+      <pre>yay kvantum</pre>
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     </div>
 
     <h3>Details</h3>
     <ul>
-      <li>Install the Layan theme and its Kvantum version via the settings link in the theme description.</li>
-      <li>Personalize the taskbar based on preference (subject to change).</li>
-      <li>Considering Latte Dock for future use.</li>
+      <li>Install the Layan theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings</li>
+      <li>Personalize the taskbar – it always changes on how I like to customize it</li>
+      <li>(Maybe I will try Latte Dock in the future)</li>
     </ul>
 
     <h3>Settings</h3>
     <ul>
-      <li>Window Management + Desktop Effects (still experimenting):</li>
-      <li>Hover effect</li>
-      <li>Transparency: Set all to very opaque</li>
-      <li>Blur effect</li>
-      <li>Possibly more effects in the future</li>
+      <li>Fensterverwaltung + Arbeitsflächen Effekte: still finding some:</li>
+      <li>Schweben (hover effect)</li>
+      <li>Transparenz: set everything to the same settings (very opaque)</li>
+      <li>Verwischen (blur effect)</li>
+      <li>Maybe some other effects in the future</li>
     </ul>
 
     <h3>Konsole</h3>
     <ul>
-      <li>Create a new profile in Settings and set as default.</li>
-      <li>In Appearance, search for new color schemes.</li>
-      <li>Currently using <code>aritim-dark</code> theme.</li>
-      <li>Edit theme and set background blur to ~20.</li>
+      <li>In Settings, create a new profile and set it as default</li>
+      <li>In Erscheinungsbild (Appearance), search for new color schemes</li>
+      <li>I use the aritim-dark theme for now</li>
+      <li>Then select the theme, click on edit, and set the background blur to something like 20</li>
     </ul>
 
     <h1>KDE Plasma 2</h1>
@@ -432,12 +434,12 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
     <h3>Theme</h3>
     <ul>
       <li>Global Settings Theme: Utterly Nord + Utterly Nord Kvantum Theme</li>
-      <li>Konsole Theme: Utterly Nord Solid with 40% transparency</li>
+      <li>Konsole Theme: Utterly Nord Solid with 40% Transparency</li>
     </ul>
 
     <h3>Desktop Effects</h3>
     <ul>
-      <li>Blur: Everything at level 6 (from left)</li>
+      <li>Blur: everything at level 6 (from left)</li>
     </ul>
 
     <h1>General Things</h1>
@@ -445,34 +447,34 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
     <h3>Fonts</h3>
     <p><a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter Font</a></p>
     <ul>
-      <li>Using Semi Bold variant</li>
+      <li>I use the Semi Bold one</li>
     </ul>
 
     <h3>Mouse Cursor</h3>
     <ul>
       <li><a href="https://github.com/ful1e5/Bibata_Cursor/releases" target="_blank">Bibata Cursor</a></li>
       <li><a href="https://www.pling.com/find?search=Windows%20xp%20cursor" target="_blank">Windows XP Modern Cursor</a></li>
-      <li>May experiment with other cursors</li>
+      <li>Maybe other cursors – I always like to change it a bit</li>
     </ul>
 
     <h3>Icons</h3>
     <div class="code-container">
-      <pre>yay -S tela-circle-icon-theme</pre>
+      <pre>yay tela-circle-icon-theme</pre>
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     </div>
 
     <h2>Other Themes</h2>
     <ul>
-      <li>For legacy applications: <a href="https://github.com/kayozxo/GNOME-macOS-Tahoe" target="_blank">GNOME macOS Tahoe</a></li>
-      <li><a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme" target="_blank">Tokyonight GTK Theme</a></li>
+      <li>For "veraltete Anwendungen": <a href="https://github.com/kayozxo/GNOME-macOS-Tahoe" target="_blank">GNOME macOS Tahoe</a></li>
+      <li>or: <a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme" target="_blank">Tokyonight GTK Theme</a></li>
     </ul>
 
-    <h2>Taskbar (Dock) and Top Bar</h2>
+    <h2>Taskbar (designed like a dock) and Top Bar</h2>
     <ul>
-      <li>Top Bar: Utterly theme layout without system menu</li>
-      <li>Top Bar: Use grey icon from this repo</li>
-      <li>Taskbar/Dock: Blue "andere" default Arch logo</li>
-      <li>Taskbar/Dock: Keep download shortcut</li>
+      <li>Top Bar default layout from the Utterly theme but with the system menu removed</li>
+      <li>Top Bar should have the grey icon from this repo</li>
+      <li>The taskbar/dock should have the blue "andere" default Arch logo</li>
+      <li>The taskbar/dock should keep the download shortcut</li>
     </ul>
 
     <h2>Fonts</h2>
@@ -482,10 +484,11 @@ yay -S ttf-unifont ttf-symbola</pre>
       <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     </div>
 
-    <h2>Screenshots (The KDE Plasma Images are not perfectly accurate)</h2>
+    <h2>Screenshots (Images are not perfectly accurate)</h2>
 
     <h3>KDE</h3>
     <img src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" alt="KDE screenshot" />
+
 
     <h3>KDE 2</h3>
     <img src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" alt="KDE 2 screenshot" />
