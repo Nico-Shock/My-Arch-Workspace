@@ -27,13 +27,14 @@ With multiple Desktops i like sddm more.
 - Open Bar  
 - User Themes  
 - System Monitor
+- Extension List
 
 ## Extension Settings:
 
 ### Blur My Shell:
 
 - Default Rounded Pipeline: Radius 20, Brightness: 100  
-- Panel: Dynamic: 29, Sigma: Brightness: 1.00  
+- Panel: Dynamic: 30, Sigma: Brightness: 1.00  
 - Applications: opaque focused windows: off, blur in overview: off, enable all by default: on, disable manually: browser
 
 ### Dash to Dock:
@@ -220,4 +221,3 @@ yay -S ttf-unifont ttf-symbola<img width="1918" height="1078" alt="image" src="h
 ### Gnome:
 
 <img width="2560" height="1440" alt="Bildschirmfoto vom 2025-07-12 23-04-22" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
-
