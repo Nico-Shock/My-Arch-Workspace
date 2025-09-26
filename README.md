@@ -239,16 +239,9 @@ sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoj
 yay -S ttf-unifont ttf-symbola<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
 ```
 
-## Screenshots (Images are not perfectly accurate)
+## Screenshots
 
-### KDE:
-
-<img width="1920" height="1078" alt="image" src="https://github.com/user-attachments/assets/cb79fd4d-ca1f-4e66-99c8-d16c97ed4173" />
-
-
-### KDE 2:
-
-<img width="1922" height="1077" alt="image" src="https://github.com/user-attachments/assets/07c39eab-d4bf-4cbf-8d95-cab906ceb46c" />
+### (KDE coming soon)
 
 ### Gnome:
 
