@@ -194,7 +194,7 @@ yay -S darkly-qt6-git
 
 - Right-click the top bar of the Konsole and try to remove everything except the title bar
 
-### Editing the Taskbar/Panel
+## Editing the Taskbar/Panel
 
 1. Right-click on the Panel and go to edit mode
 2. Disable the floating effect and the blur by changing the option to "Disabled."
