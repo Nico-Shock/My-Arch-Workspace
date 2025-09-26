@@ -123,50 +123,82 @@ yay -S ttf-dejavu-sans-mono-powerline-git
 
 # KDE Plasma:
 
-## Insterllation:
+## Material You Theme:
 
+**Just follow the guide here:**
+
+(KDE Material You Colors)[https://github.com/luisbocanegra/kde-material-you-colors]
+
+## Klassy Theme:
+
+**Just follow the guide here:**
+
+(Klassy)[https://github.com/paulmcauley/klassy]
+
+- In the Appearance settings, make sure to select the "Klassy" theme in the Window Decoration.
+
+## Klassy Settings:
+
+### Klassy Window Decoration:
+
+**Buttons:**
+
+- Set the icons to Fluent
+- Set the icon size to 16
+- Select bold icons
+- Select the "Full-height rounded Rectangle" shape
+
+**Window:**
+
+- Set the corner radius to 6
+- Set all window outline styles to "none" and uncheck the box "Colourize with highlighted buttons colour"
+
+### Klassy Application Style:
+
+**General:**
+
+- Uncheck every box with "Draw.." (so, uncheck all boxes)
+
+## Install Darkly:
 ```
-sudo pacman -S plasma konsole
+yay -S darkly-qt6-git
 ```
+- In the Appearance settings, make sure to select the "Klassy" theme in the Application Style.
 
-## Installations:
+### Edit Darkly
 
-```
-yay kvantum
-```
+**General:**
 
-### Details:
+- Uncheck the box "Draw focus indicator in lists"
 
-- Install the Layan theme and the Kvantum version via the link in the settings from the theme description in the installation menu under settings  
-- Personalize the taskbar – it always changes on how I like to customize it  
-- (Maybe I will try Latte Dock in the future)
+**Frames:**
 
-### Settings:
+- Uncheck the box "Draw rounded frame on rubber band control"
 
-- Fensterverwaltung + Arbeitsflächen Effekte: still finding some:
+## Install Papirus Icons
 
-- Schweben (hover effect)  
-- Transparenz: set everything to the same settings (very opaque)  
-- Verwischen (blur effect)  
-- Maybe some other effects in the future
+1. Open the icon settings in Appearance in the KDE Plasma settings
+2. Click on "Get New"
+3. Search for "Papirus"
+4. Install the default "Papirus" icon theme and in the drop-down menu select the standard one called "papirus-icon-theme-versionnumber.tar.xz"
 
-### Konsole
+## Konsole
 
-- In Settings, create a new profile and set it as default  
-- In Erscheinungsbild (Appearance), search for new color schemes  
-- I use the aritim-dark theme for now  
-- Then select the theme, click on edit, and set the background blur to something like 20
+### Change Font Size:
 
-# KDE Plasma 2
+1. Right-click the Konsole window and select "Edit Current Profile," then go to Appearance
+2. Here you can change the font
+3. I like to set it to "JetBrainsMono NFM 16px"
 
-### Theme
+### Editing the Top Bar:
 
-- Global Settings Theme: Utterly Nord + Utterly Nord Kvantum Theme
-- Konsole Theme: Utterly Nord Solid with 40% Transparency
+- Right-click the top bar of the Konsole and try to remove everything except the title bar
 
-### Desktop Effects
+### Editing the Taskbar/Panel
 
-- Blur: everything at level 6 (from left)
+1. Right-click on the Panel and go to edit mode
+2. Disable the floating effect and the blur by changing the option to "Disabled."
+3. Change the taskbar size to 32.
 
 # General Things:
 
@@ -174,7 +206,7 @@ yay kvantum
 
 https://fonts.google.com/specimen/Inter
 
-- I use the Semi Bold one
+- I use the Semi Bold one (10px)
 
 ### Mouse Cursor:
 
