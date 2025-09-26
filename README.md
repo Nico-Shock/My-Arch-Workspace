@@ -127,13 +127,13 @@ yay -S ttf-dejavu-sans-mono-powerline-git
 
 **Just follow the guide here:**
 
-(KDE Material You Colors)[https://github.com/luisbocanegra/kde-material-you-colors]
+[KDE Material You Colors](https://github.com/luisbocanegra/kde-material-you-colors)
 
 ## Klassy Theme:
 
 **Just follow the guide here:**
 
-(Klassy)[https://github.com/paulmcauley/klassy]
+[Klassy](https://github.com/paulmcauley/klassy)
 
 - In the Appearance settings, make sure to select the "Klassy" theme in the Window Decoration.
 
