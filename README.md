@@ -8,7 +8,7 @@
 pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm
 ```
 
-Full Guide: https://nico-shock.github.io/Arch-Linux-on-Nvidia/#install-a-desktop-environment
+Full Guide: https://nico-shock.github.io/Arch-Linux-on-Nvidia-V2/
 
 With multiple Desktops i like sddm more.
 
