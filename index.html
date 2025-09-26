@@ -26,8 +26,34 @@
       text-align: center;
       padding: 10px 0;
     }
-    h1, h2, h3 {
+    h1 {
       color: #ffffff;
+      font-size: 2.5em; /* Größer als Standard h1 */
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      color: #ffffff;
+      font-size: 2em; /* Größer als Standard h2 */
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    h3 {
+      color: #ffffff;
+      font-size: 1.6em; /* Größer als Standard h3 */
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    h4 {
+      color: #ffffff;
+      font-size: 1.3em; /* Größer als Standard h4 */
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    h5 {
+      color: #ffffff;
+      font-size: 1.15em; /* Größer als Standard h5 */
+      margin-top: 1em;
+      margin-bottom: 0.5em;
     }
     a {
       color: #bb86fc;
@@ -123,19 +149,17 @@
   <div class="container">
     <header>
       <h1>Arch Linux Workspace Setup</h1>
+      <p>Here is my personal Arch Linux workspace setup.</p>
     </header>
-    
     <section id="gnome-setup">
       <h2>Gnome Setup</h2>
-      
       <h3>Installation</h3>
       <div class="code-wrapper">
         <pre>pacman -S gnome-shell gnome-terminal gnome-control-center gnome-software gnome-menus gnome-shell-extensions gnome-system-monitor mutter gdm && systemctl enable gdm</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      <p>Full Guide: <a href="https://nico-shock.github.io/Arch-Linux-on-Nvidia-V2/">https://nico-shock.github.io/Arch-Linux-on-Nvidia-V2/</a></p>
+      <p>Full Guide: <a href="https://nico-shock.github.io/Arch-Linux-on-Nvidia-V2/" target="_blank">https://nico-shock.github.io/Arch-Linux-on-Nvidia-V2/</a></p>
       <p>With multiple Desktops i like sddm more.</p>
-      
       <h3>Extensions</h3>
       <ul>
         <li>Application and KStatusNotifierItem Support (optional)</li>
@@ -153,16 +177,12 @@
         <li>System Monitor</li>
         <li>Extension List</li>
       </ul>
-      
-      <h3>Extension Settings</h3>
-      
       <h4>Blur My Shell</h4>
       <ul>
         <li>Default Rounded Pipeline: Radius 20, Brightness: 100</li>
         <li>Panel: Dynamic: 30, Sigma: Brightness: 1.00</li>
         <li>Applications: opaque focused windows: off, blur in overview: off, enable all by default: on, disable manually: browser</li>
       </ul>
-      
       <h4>Dash to Dock</h4>
       <ul>
         <li>Intelligent auto-hide: off</li>
@@ -172,7 +192,6 @@
         <li>Minimize appearance: on</li>
         <li>Window counter indicators: dots</li>
       </ul>
-      
       <h4>Just Perfection</h4>
       <ul>
         <li>Panel button spacing: 0px</li>
@@ -180,7 +199,6 @@
         <li>Clock position: right + 6 to 9 px offset</li>
         <li>Dash icon size: 32px</li>
       </ul>
-      
       <h4>Arc Menu</h4>
       <ul>
         <li>Menu button: Arch</li>
@@ -188,18 +206,14 @@
         <li>Width: 450</li>
         <li>Height: 300</li>
       </ul>
-      
       <h4>Open Bar</h4>
-      <p><a href="https://github.com/Nico-Shock/My-OpenBar-configs">https://github.com/Nico-Shock/My-OpenBar-configs</a></p>
-      
+      <p><a href="https://github.com/Nico-Shock/My-OpenBar-configs" target="_blank">https://github.com/Nico-Shock/My-OpenBar-configs</a></p>
       <h3>Commands</h3>
-      
       <h4>Extensions Manager Installation</h4>
       <div class="code-wrapper">
         <pre>flatpak install flathub com.mattjakeman.ExtensionManager</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      
       <h4>WhiteSur Theme</h4>
       <div class="code-wrapper">
         <pre>git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
@@ -209,7 +223,6 @@ cd ..
 sudo rm -r WhiteSur-gtk-theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      
       <h4>Tokyonight Theme</h4>
       <div class="code-wrapper">
         <pre>git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
@@ -220,14 +233,12 @@ cd ..
 sudo rm -r Tokyonight-GTK-Theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      
       <h3>Gnome Tweaks</h3>
       <ul>
         <li>Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.</li>
         <li>Set the Shell theme to <span class="highlight">WhiteSur-Dark</span></li>
         <li>Set the other theme to the <span class="highlight">Tokyonight</span> theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.</li>
       </ul>
-      
       <h4>Zsh</h4>
       <div class="code-wrapper">
         <pre>sudo pacman -S zsh</pre>
@@ -242,7 +253,6 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <pre>chsh -s $(which zsh)</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      
       <h4>Terminal (Ptyxis)</h4>
       <div class="code-wrapper">
         <pre>sudo pacman -S ptyxis</pre>
@@ -260,25 +270,19 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <li>Select this font for the Ptyxis terminal.</li>
       </ul>
     </section>
-    
     <section id="kde-plasma">
       <h2>KDE Plasma</h2>
-      
       <h3>Material You Theme</h3>
       <p>Just follow the guide here:</p>
-      <p><a href="https://github.com/luisbocanegra/kde-material-you-colors">KDE Material You Colors</a></p>
-      
+      <p><a href="https://github.com/luisbocanegra/kde-material-you-colors" target="_blank">KDE Material You Colors</a></p>
       <h3>Klassy Theme</h3>
       <p>Just follow the guide here:</p>
-      <p><a href="https://github.com/paulmcauley/klassy">Klassy</a></p>
+      <p><a href="https://github.com/paulmcauley/klassy" target="_blank">Klassy</a></p>
       <ul>
         <li>In the Appearance settings, make sure to select the "Klassy" theme in the Window Decoration.</li>
       </ul>
-      
       <h3>Klassy Settings</h3>
-      
       <h4>Klassy Window Decoration</h4>
-      
       <h5>Buttons</h5>
       <ul>
         <li>Set the icons to Fluent</li>
@@ -286,20 +290,16 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <li>Select bold icons</li>
         <li>Select the "Full-height rounded Rectangle" shape</li>
       </ul>
-      
       <h5>Window</h5>
       <ul>
         <li>Set the corner radius to 6</li>
         <li>Set all window outline styles to "none" and uncheck the box "Colourize with highlighted buttons colour"</li>
       </ul>
-      
       <h4>Klassy Application Style</h4>
-      
       <h5>General</h5>
       <ul>
         <li>Uncheck every box with "Draw.." (so, uncheck all boxes)</li>
       </ul>
-      
       <h3>Install Darkly</h3>
       <div class="code-wrapper">
         <pre>yay -S darkly-qt6-git</pre>
@@ -308,19 +308,15 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
       <ul>
         <li>In the Appearance settings, make sure to select the "Klassy" theme in the Application Style.</li>
       </ul>
-      
       <h3>Edit Darkly</h3>
-      
       <h4>General</h4>
       <ul>
         <li>Uncheck the box "Draw focus indicator in lists"</li>
       </ul>
-      
       <h4>Frames</h4>
       <ul>
         <li>Uncheck the box "Draw rounded frame on rubber band control"</li>
       </ul>
-      
       <h3>Install Papirus Icons</h3>
       <ol>
         <li>Open the icon settings in Appearance in the KDE Plasma settings</li>
@@ -328,21 +324,17 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <li>Search for "Papirus"</li>
         <li>Install the default "Papirus" icon theme and in the drop-down menu select the standard one called "papirus-icon-theme-versionnumber.tar.xz"</li>
       </ol>
-      
       <h3>Konsole</h3>
-      
       <h4>Change Font Size</h4>
       <ol>
         <li>Right-click the Konsole window and select "Edit Current Profile," then go to Appearance</li>
         <li>Here you can change the font</li>
         <li>I like to set it to "JetBrainsMono NFM 16px"</li>
       </ol>
-      
       <h4>Editing the Top Bar</h4>
       <ul>
         <li>Right-click the top bar of the Konsole and try to remove everything except the title bar</li>
       </ul>
-      
       <h3>Editing the Taskbar/Panel</h3>
       <ol>
         <li>Right-click on the Panel and go to edit mode</li>
@@ -350,33 +342,27 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <li>Change the taskbar size to 32.</li>
       </ol>
     </section>
-    
     <section id="general-things">
       <h2>General Things</h2>
-      
       <h3>Fonts</h3>
-      <p><a href="https://fonts.google.com/specimen/Inter">https://fonts.google.com/specimen/Inter</a></p>
+      <p><a href="https://fonts.google.com/specimen/Inter" target="_blank">https://fonts.google.com/specimen/Inter</a></p>
       <ul>
         <li>I use the Semi Bold one (10px)</li>
       </ul>
-      
       <h3>Mouse Cursor</h3>
       <ul>
-        <li>Bibata Cursor: <a href="https://github.com/ful1e5/Bibata_Cursor/releases">https://github.com/ful1e5/Bibata_Cursor/releases</a></li>
-        <li>Windows XP Modern Cursor: <a href="https://www.pling.com/find?search=Windows%20xp%20cursor">https://www.pling.com/find?search=Windows%20xp%20cursor</a></li>
+        <li>Bibata Cursor: <a href="https://github.com/ful1e5/Bibata_Cursor/releases" target="_blank">https://github.com/ful1e5/Bibata_Cursor/releases</a></li>
+        <li>Windows XP Modern Cursor: <a href="https://www.pling.com/find?search=Windows%20xp%20cursor" target="_blank">https://www.pling.com/find?search=Windows%20xp%20cursor</a></li>
         <li>Maybe other cursors – I always like to change it a bit</li>
       </ul>
-      
       <h3>Icons</h3>
       <div class="code-wrapper">
         <pre>yay tela-circle-icon-theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      
       <h3>Other Themes</h3>
-      <p>For "veraltete Anwendungen": <a href="https://github.com/kayozxo/GNOME-macOS-Tahoe">https://github.com/kayozxo/GNOME-macOS-Tahoe</a></p>
-      <p>or: <a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme">https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme</a></p>
-      
+      <p>For "veraltete Anwendungen": <a href="https://github.com/kayozxo/GNOME-macOS-Tahoe" target="_blank">https://github.com/kayozxo/GNOME-macOS-Tahoe</a></p>
+      <p>or: <a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme" target="_blank">https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme</a></p>
       <h3>Taskbar (designed like a dock) and Top Bar</h3>
       <ul>
         <li>Top Bar default layout from the Utterly theme but with the system menu removed</li>
@@ -384,27 +370,21 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <li>The taskbar/dock should have the blue "andere" default Arch logo</li>
         <li>The taskbar/dock should keep the download shortcut</li>
       </ul>
-      
       <h3>Fonts</h3>
       <div class="code-wrapper">
         <pre>sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
 yay -S ttf-unifont ttf-symbola</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      
       <h3>Screenshots</h3>
-      
       <h4>(KDE coming soon)</h4>
-      
       <h4>Gnome</h4>
       <img width="2560" height="1440" alt="Bildschirmfoto vom 2025-07-12 23-04-22" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
     </section>
-    
     <footer>
       <p>&copy; 2025 Arch Linux Workspace Setup by Nico-Shock</p>
     </footer>
   </div>
-  
   <script>
     function copyCode(btn) {
       const codeText = btn.previousElementSibling.innerText;
