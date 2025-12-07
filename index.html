@@ -232,8 +232,8 @@
       <div class="code-wrapper">
         <pre>git clone https://github.com/vinceliuice/MacTahoe-gtk-theme.git --depth 1
 cd MacTahoe-gtk-theme
-./install.sh -l
-cd ..
+./install.sh -l 
+cd ..  
 sudo rm -r MacTahoe-gtk-theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
@@ -260,7 +260,7 @@ sudo rm -r Rose-Pine-GTK-Theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
       <div class="code-wrapper">
-        <pre>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+        <pre>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
@@ -338,6 +338,15 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <li>Right-click on the Panel and go to edit mode</li>
         <li>Disable the floating effect by changing the option to "Disabled." And enable the blur effect.</li>
         <li>Change the taskbar size to 28.</li>
+      </ol>
+      <h3>Make Windows Transparent</h3>
+      <ol>
+        <li>Go to Settings under Window Management and then to window rules</li>
+        <li>Click on Add new and give the rule a name</li>
+        <li>Then click the "Detect Window Properties" button and click on the window you want to make transparent</li>
+        <li>Then add everything that is shown for the window in the rule</li>
+        <li>After that manually add new window properties called "Opacity inactive" and "Opacity active"</li>
+        <li>For Dolphin select opacity for active to 98 and for Konsole to 90 (keep inactive to 100)</li>
       </ol>
     </section>
     <section id="general-things">
