@@ -194,6 +194,15 @@ yay -S ttf-dejavu-sans-mono-powerline-git
 2. Disable the floating effect by changing the option to "Disabled." And enable the blur effect.
 3. Change the taskbar size to 28.
 
+### Make Windows Transparent
+
+1. Go to Settings under Window Management and then to window rules
+2. Click on Add new and give the rule a name
+3. Then click the "Detect Window Properties" button and click on the window you want to make transparent
+4. Then add everything that is shown for the window in the rule
+5. After that manually add new window properties called "Opacity inactive" and "Opacity active"
+6. For Dolphin select opacity for active to 98 and for Konsole to 90 (keep inactive to 100)
+
 # General Things:
 
 ### Fonts:
