@@ -227,4 +227,4 @@ yay -S ttf-unifont ttf-symbola
 
 ### Gnome:
 
-<img width="2560" height="1440" alt="Bildschirmfoto vom 2025-07-12 23-04-22" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
+<img width="2558" height="1440" alt="Bildschirmfoto_20251207_160046" src="https://github.com/user-attachments/assets/3137b72c-2b52-477f-8e57-beb8758dd682" />
