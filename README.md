@@ -37,7 +37,7 @@ With multiple Desktops i like sddm more.
 ### Dash to Dock:
 
 - Intelligent auto-hide: off  
-- Size: 24
+- Size: 20
 - Menu moved to the left  
 - Show drives and devices: off  
 - Minimize appearance: on  
@@ -47,7 +47,7 @@ With multiple Desktops i like sddm more.
 
 - Panel button spacing: 0px  
 - Panel indicator spacing: 2px  
-- Clock position: left + 1px offset
+- Clock position: left + 1pt offset
 
 ### Open Bar:
 
@@ -60,11 +60,12 @@ With multiple Desktops i like sddm more.
 - Apply in overview: on
 - enable buttons proximity: off
 - Bar Margins: 0
-- Bar Height: 20
+- Bar Height: 32
 
 #### Dash/Dock:
 - Style: Use top bar colors
 - Disable Shadows
+- Dock Size: 20
 
 #### Gnome Shell:
 - enable everything
