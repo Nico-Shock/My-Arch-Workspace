@@ -162,21 +162,20 @@
       <p>With multiple Desktops i like sddm more.</p>
       <h3>Extensions</h3>
       <ul>
-        <li>Application and KStatusNotifierItem Support (optional)</li>
         <li>Blur My Shell</li>
         <li>Just Perfection</li>
         <li>Dash to Dock</li>
-        <li>Arc Menu</li>
+        <li>Arc Menu (outdated)</li>
         <li>Coverflow</li>
         <li>Impatience</li>
         <li>Gnome 4x UI Improvements</li>
         <li>Caffeine</li>
-        <li>Tiling Shell (optional)</li>
         <li>Open Bar</li>
         <li>User Themes</li>
         <li>System Monitor</li>
         <li>Extension List</li>
       </ul>
+      <h3>Extension Settings</h3>
       <h4>Blur My Shell</h4>
       <ul>
         <li>Default Rounded Pipeline: Radius 20, Brightness: 100</li>
@@ -186,7 +185,7 @@
       <h4>Dash to Dock</h4>
       <ul>
         <li>Intelligent auto-hide: off</li>
-        <li>Size: 32</li>
+        <li>Size: 24</li>
         <li>Menu moved to the left</li>
         <li>Show drives and devices: off</li>
         <li>Minimize appearance: on</li>
@@ -196,17 +195,32 @@
       <ul>
         <li>Panel button spacing: 0px</li>
         <li>Panel indicator spacing: 2px</li>
-        <li>Clock position: right + 6 to 9 px offset</li>
-        <li>Dash icon size: 32px</li>
-      </ul>
-      <h4>Arc Menu</h4>
-      <ul>
-        <li>Menu button: Arch</li>
-        <li>Menu view: Startmenu: Runner</li>
-        <li>Width: 450</li>
-        <li>Height: 300</li>
+        <li>Clock position: left + 1px offset</li>
       </ul>
       <h4>Open Bar</h4>
+      <h5>Autotheming:</h5>
+      <ul>
+        <li>Auto Refresh theme on background change: on</li>
+        <li>Auto set bar margins and island bg alpha: off</li>
+      </ul>
+      <h5>Topbar properties:</h5>
+      <ul>
+        <li>Type: Islands</li>
+        <li>Apply in overview: on</li>
+        <li>enable buttons proximity: off</li>
+        <li>Bar Margins: 0</li>
+        <li>Bar Height: 20</li>
+      </ul>
+      <h5>Dash/Dock:</h5>
+      <ul>
+        <li>Style: Use top bar colors</li>
+        <li>Disable Shadows</li>
+      </ul>
+      <h5>Gnome Shell:</h5>
+      <ul>
+        <li>enable everything</li>
+      </ul>
+      <p>Here are more of my custom configs:</p>
       <p><a href="https://github.com/Nico-Shock/My-OpenBar-configs" target="_blank">https://github.com/Nico-Shock/My-OpenBar-configs</a></p>
       <h3>Commands</h3>
       <h4>Extensions Manager Installation</h4>
@@ -214,30 +228,31 @@
         <pre>flatpak install flathub com.mattjakeman.ExtensionManager</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      <h4>WhiteSur Theme</h4>
+      <h4>MacOS Tahoe GTK Theme</h4>
       <div class="code-wrapper">
-        <pre>git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
-cd WhiteSur-gtk-theme  
-./install.sh -l  
-cd ..  
-sudo rm -r WhiteSur-gtk-theme</pre>
+        <pre>git clone https://github.com/vinceliuice/MacTahoe-gtk-theme.git --depth 1
+cd MacTahoe-gtk-theme
+./install.sh -l
+cd ..
+sudo rm -r MacTahoe-gtk-theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      <h4>Tokyonight Theme</h4>
+      <h4>Rosepine Theme</h4>
       <div class="code-wrapper">
-        <pre>git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
-cd Tokyonight-GTK-Theme/themes
-./install.sh -l --tweaks black macos
+        <pre>yay -S gtk-engine-murrine
+git clone https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git --depth 1
+cd Rose-Pine-GTK-Theme/themes
+./install.sh -c dark
 cd ..
 cd ..
-sudo rm -r Tokyonight-GTK-Theme</pre>
+sudo rm -r Rose-Pine-GTK-Theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
       <h3>Gnome Tweaks</h3>
       <ul>
-        <li>Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.</li>
-        <li>Set the Shell theme to <span class="highlight">WhiteSur-Dark</span></li>
-        <li>Set the other theme to the <span class="highlight">Tokyonight</span> theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.</li>
+        <li>Set the Shell theme to <span class="highlight">Adwaita</span></li>
+        <li>Set the other theme to the <span class="highlight">Rosepine-Dark</span> theme.</li>
+        <li>Set every font to the Inter Semi Bold one.</li>
       </ul>
       <h4>Zsh</h4>
       <div class="code-wrapper">
@@ -245,7 +260,7 @@ sudo rm -r Tokyonight-GTK-Theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
       <div class="code-wrapper">
-        <pre>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
+        <pre>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
@@ -292,30 +307,14 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
       </ul>
       <h5>Window</h5>
       <ul>
-        <li>Set the corner radius to 6</li>
-        <li>Set all window outline styles to "none" and uncheck the box "Colourize with highlighted buttons colour"</li>
+        <li>Set the corner radius to 0</li>
+        <li>Uncheck the box "Colourize with highlighted buttons colour"</li>
+        <li>Go to the Window Outline Style and change the outline to 2.15, the opacity of active windows to 80% and of inactive windows to 55%</li>
       </ul>
       <h4>Klassy Application Style</h4>
       <h5>General</h5>
       <ul>
         <li>Uncheck every box with "Draw.." (so, uncheck all boxes)</li>
-      </ul>
-      <h3>Install Darkly</h3>
-      <div class="code-wrapper">
-        <pre>yay -S darkly-qt6-git</pre>
-        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-      </div>
-      <ul>
-        <li>In the Appearance settings, make sure to select the "Klassy" theme in the Application Style.</li>
-      </ul>
-      <h3>Edit Darkly</h3>
-      <h4>General</h4>
-      <ul>
-        <li>Uncheck the box "Draw focus indicator in lists"</li>
-      </ul>
-      <h4>Frames</h4>
-      <ul>
-        <li>Uncheck the box "Draw rounded frame on rubber band control"</li>
       </ul>
       <h3>Install Papirus Icons</h3>
       <ol>
@@ -328,8 +327,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
       <h4>Change Font Size</h4>
       <ol>
         <li>Right-click the Konsole window and select "Edit Current Profile," then go to Appearance</li>
-        <li>Here you can change the font</li>
-        <li>I like to set it to "JetBrainsMono NFM 16px"</li>
+        <li>Here you can change the font, I like to change it to the DejaVu Sans Mono font (11px).</li>
       </ol>
       <h4>Editing the Top Bar</h4>
       <ul>
@@ -338,8 +336,8 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
       <h3>Editing the Taskbar/Panel</h3>
       <ol>
         <li>Right-click on the Panel and go to edit mode</li>
-        <li>Disable the floating effect and the blur by changing the option to "Disabled."</li>
-        <li>Change the taskbar size to 32.</li>
+        <li>Disable the floating effect by changing the option to "Disabled." And enable the blur effect.</li>
+        <li>Change the taskbar size to 28.</li>
       </ol>
     </section>
     <section id="general-things">
@@ -347,29 +345,17 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</pre>
       <h3>Fonts</h3>
       <p><a href="https://fonts.google.com/specimen/Inter" target="_blank">https://fonts.google.com/specimen/Inter</a></p>
       <ul>
-        <li>I use the Semi Bold one (10px)</li>
+        <li>I use the Semi Bold one</li>
       </ul>
       <h3>Mouse Cursor</h3>
       <ul>
-        <li>Bibata Cursor: <a href="https://github.com/ful1e5/Bibata_Cursor/releases" target="_blank">https://github.com/ful1e5/Bibata_Cursor/releases</a></li>
-        <li>Windows XP Modern Cursor: <a href="https://www.pling.com/find?search=Windows%20xp%20cursor" target="_blank">https://www.pling.com/find?search=Windows%20xp%20cursor</a></li>
-        <li>Maybe other cursors – I always like to change it a bit</li>
+        <li><code>yay -S breeze-snow-cursor-theme</code></li>
       </ul>
       <h3>Icons</h3>
       <div class="code-wrapper">
         <pre>yay tela-circle-icon-theme</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
-      <h3>Other Themes</h3>
-      <p>For "veraltete Anwendungen": <a href="https://github.com/kayozxo/GNOME-macOS-Tahoe" target="_blank">https://github.com/kayozxo/GNOME-macOS-Tahoe</a></p>
-      <p>or: <a href="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme" target="_blank">https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme</a></p>
-      <h3>Taskbar (designed like a dock) and Top Bar</h3>
-      <ul>
-        <li>Top Bar default layout from the Utterly theme but with the system menu removed</li>
-        <li>Top Bar should have the grey icon from this repo</li>
-        <li>The taskbar/dock should have the blue "andere" default Arch logo</li>
-        <li>The taskbar/dock should keep the download shortcut</li>
-      </ul>
       <h3>Fonts</h3>
       <div class="code-wrapper">
         <pre>sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
@@ -377,9 +363,11 @@ yay -S ttf-unifont ttf-symbola</pre>
         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
       </div>
       <h3>Screenshots</h3>
-      <h4>(KDE coming soon)</h4>
-      <h4>Gnome</h4>
-      <img width="2560" height="1440" alt="Bildschirmfoto vom 2025-07-12 23-04-22" src="https://github.com/user-attachments/assets/54c88a03-cee5-4c97-9418-ed775b14f432" />
+      <h4>KDE Plasma:</h4>
+      <img src="https://github.com/user-attachments/assets/bac1d7bd-1441-4444-8490-b50c4ec40c85" alt="Bildschirmfoto_20251207_155332" />
+      <h4>Gnome:</h4>
+      <img src="https://github.com/user-attachments/assets/3137b72c-2b52-477f-8e57-beb8758dd682" alt="Bildschirmfoto_20251207_160046" />
+      <img src="https://github.com/user-attachments/assets/95ab10ce-cad0-4c60-9167-94d42df60d05" alt="Bildschirmfoto_20251207_160411" />
     </section>
     <footer>
       <p>&copy; 2025 Arch Linux Workspace Setup by Nico-Shock</p>
