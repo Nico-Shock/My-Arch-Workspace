@@ -13,17 +13,14 @@ Full Guide: https://nico-shock.github.io/Arch-Linux-on-Nvidia-V2/
 With multiple Desktops i like sddm more.
 
 ## Extensions:
-
-- Application and KStatusNotifierItem Support (optional)  
 - Blur My Shell  
 - Just Perfection  
 - Dash to Dock  
-- Arc Menu  
+- Arc Menu (outdated) 
 - Coverflow  
 - Impatience  
 - Gnome 4x UI Improvements  
-- Caffeine  
-- Tiling Shell (optional)  
+- Caffeine   
 - Open Bar  
 - User Themes  
 - System Monitor
@@ -40,7 +37,7 @@ With multiple Desktops i like sddm more.
 ### Dash to Dock:
 
 - Intelligent auto-hide: off  
-- Size: 32  
+- Size: 24
 - Menu moved to the left  
 - Show drives and devices: off  
 - Minimize appearance: on  
@@ -50,17 +47,29 @@ With multiple Desktops i like sddm more.
 
 - Panel button spacing: 0px  
 - Panel indicator spacing: 2px  
-- Clock position: right + 6 to 9 px offset  
-- Dash icon size: 32px
-
-### Arc Menu:
-
-- Menu button: Arch  
-- Menu view: Startmenu: Runner  
-- Width: 450  
-- Height: 300
+- Clock position: left + 1px offset
 
 ### Open Bar:
+
+#### Autotheming:
+- Auto Refresh theme on background change: on
+- Auto set bar margins and island bg alpha: off
+
+#### Topbar properties:
+- Type: Islands
+- Apply in overview: on
+- enable buttons proximity: off
+- Bar Margins: 0
+- Bar Height: 20
+
+#### Dash/Dock:
+- Style: Use top bar colors
+- Disable Shadows
+
+#### Gnome Shell:
+- enable everything
+
+Here are more of my custom configs:
 
 - https://github.com/Nico-Shock/My-OpenBar-configs
 
@@ -71,30 +80,31 @@ With multiple Desktops i like sddm more.
 flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
-### WhiteSur Theme:
+### MacOS Tahoe GTK Theme:
 ```
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git  
-cd WhiteSur-gtk-theme  
-./install.sh -l  
+git clone https://github.com/vinceliuice/MacTahoe-gtk-theme.git --depth 1
+cd MacTahoe-gtk-theme
+./install.sh -l 
 cd ..  
-sudo rm -r WhiteSur-gtk-theme
+sudo rm -r MacTahoe-gtk-theme
 ```
 
-### Tokyonight Theme:
+### Rosepine Theme:
 ```
-git clone --depth 1 https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git
-cd Tokyonight-GTK-Theme/themes
-./install.sh -l --tweaks black macos
+yay -S gtk-engine-murrine
+git clone https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git --depth 1
+cd Rose-Pine-GTK-Theme/themes
+./install.sh -c dark
 cd ..
 cd ..
-sudo rm -r Tokyonight-GTK-Theme
+sudo rm -r Rose-Pine-GTK-Theme
 ```
 
 ## Gnome Tweaks
 
-- Do not change the font here — it's set through KDE Plasma. Changing it in GNOME can mess up the font rendering in Ptyxis if "apply system font" is used.
-- Set the Shell theme to `WhiteSur-Dark`
-- Set the other theme to the `Tokyonight` theme — this way, all apps stay compact thanks to the WhiteSur shell styling, and everything else uses the Tokyo Night theme via the libadwaita system.
+- Set the Shell theme to `Adwaita`
+- Set the other theme to the `Rosepine-Dark` theme.
+- Set every font to the Inter Semi Bold one.
 
 ### Zsh:
 ```
@@ -150,30 +160,15 @@ yay -S ttf-dejavu-sans-mono-powerline-git
 
 **Window:**
 
-- Set the corner radius to 6
-- Set all window outline styles to "none" and uncheck the box "Colourize with highlighted buttons colour"
+- Set the corner radius to 0
+- Uncheck the box "Colourize with highlighted buttons colour"
+- Go to the Window Outline Style and change the outline to 2.15, the opacity of active windows to 80% and of inactive windows to 55%
 
 ### Klassy Application Style:
 
 **General:**
 
 - Uncheck every box with "Draw.." (so, uncheck all boxes)
-
-## Install Darkly:
-```
-yay -S darkly-qt6-git
-```
-- In the Appearance settings, make sure to select the "Klassy" theme in the Application Style.
-
-### Edit Darkly
-
-**General:**
-
-- Uncheck the box "Draw focus indicator in lists"
-
-**Frames:**
-
-- Uncheck the box "Draw rounded frame on rubber band control"
 
 ## Install Papirus Icons
 
@@ -187,8 +182,7 @@ yay -S darkly-qt6-git
 ### Change Font Size:
 
 1. Right-click the Konsole window and select "Edit Current Profile," then go to Appearance
-2. Here you can change the font
-3. I like to set it to "JetBrainsMono NFM 16px"
+2. Here you can change the font, I like to change it to the DejaVu Sans Mono font (11px).
 
 ### Editing the Top Bar:
 
@@ -197,8 +191,8 @@ yay -S darkly-qt6-git
 ## Editing the Taskbar/Panel
 
 1. Right-click on the Panel and go to edit mode
-2. Disable the floating effect and the blur by changing the option to "Disabled."
-3. Change the taskbar size to 32.
+2. Disable the floating effect by changing the option to "Disabled." And enable the blur effect.
+3. Change the taskbar size to 28.
 
 # General Things:
 
@@ -206,13 +200,11 @@ yay -S darkly-qt6-git
 
 https://fonts.google.com/specimen/Inter
 
-- I use the Semi Bold one (10px)
+- I use the Semi Bold one
 
 ### Mouse Cursor:
 
-- Bibata Cursor: https://github.com/ful1e5/Bibata_Cursor/releases  
-- Windows XP Modern Cursor: https://www.pling.com/find?search=Windows%20xp%20cursor  
-- Maybe other cursors – I always like to change it a bit
+- `yay -S breeze-snow-cursor-theme`
 
 ### Icons:
 
@@ -220,28 +212,18 @@ https://fonts.google.com/specimen/Inter
 yay tela-circle-icon-theme
 ```
 
-## Other Themes:
-
-For "veraltete Anwendungen": https://github.com/kayozxo/GNOME-macOS-Tahoe
-or: https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme
-
-## Taskbar (designed like a dock) and Top Bar
-
-- Top Bar default layout from the Utterly theme but with the system menu removed  
-- Top Bar should have the grey icon from this repo  
-- The taskbar/dock should have the blue "andere" default Arch logo  
-- The taskbar/dock should keep the download shortcut
-
 ## Fonts:
 
 ```
 sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
-yay -S ttf-unifont ttf-symbola<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/734b60f0-702e-450f-baac-70cf4348f819" />
+yay -S ttf-unifont ttf-symbola
 ```
 
 ## Screenshots
 
-### (KDE coming soon)
+### KDE Plasma:
+
+<img width="2558" height="1440" alt="Bildschirmfoto_20251207_155332" src="https://github.com/user-attachments/assets/bac1d7bd-1441-4444-8490-b50c4ec40c85" />
 
 ### Gnome:
 
