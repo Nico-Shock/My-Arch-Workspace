@@ -214,7 +214,7 @@ https://fonts.google.com/specimen/Inter
 
 ### Mouse Cursor:
 
-- `sudo dnf install -y breeze-cursor-theme`
+- `yay -S breeze-snow-cursor-theme`
 
 ### Icons:
 
