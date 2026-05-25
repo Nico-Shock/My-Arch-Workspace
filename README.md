@@ -78,7 +78,7 @@ Here are more of my custom configs:
 
 ### Extensions Manager Installation:
 ```
-flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install -y flathub com.mattjakeman.ExtensionManager
 ```
 
 ### MacOS Tahoe GTK Theme:
@@ -107,18 +107,6 @@ sudo rm -r Rose-Pine-GTK-Theme
 - Set the other theme to the `Rosepine-Dark` theme.
 - Set every font to the Inter Semi Bold one.
 
-### Zsh:
-```
-sudo pacman -S zsh
-```
-``` 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-```
-```
-chsh -s $(which zsh)
-```
-
 ### Terminal (Ptyxis):
 ```
 sudo pacman -S ptyxis
@@ -126,11 +114,8 @@ sudo pacman -S ptyxis
 ```
 gsettings set 'org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/'$PTYXIS_PROFILE'/' 'opacity' '0.70'
 ```
-```
-yay -S ttf-dejavu-sans-mono-powerline-git
-```
 
-- Select this font for the Ptyxis terminal.
+- Select DejaVu Sans Mono or Powerline font for the `Ptyxis` terminal.
 
 # KDE Plasma:
 
@@ -148,46 +133,39 @@ yay -S ttf-dejavu-sans-mono-powerline-git
 
 - In the Appearance settings, make sure to select the "Klassy" theme in the Window Decoration.
 
-## Klassy Settings:
-
-### Klassy Window Decoration:
+## Klassy Settings
 
 **Buttons:**
 
 - Set the icons to Fluent
 - Set the icon size to 16
 - Select bold icons
-- Select the "Full-height rounded Rectangle" shape
+- Change the shape to full-height rounded rectangle
 
 **Window:**
 
-- Set the corner radius to 0
+- Set the corner radius to 6
 - Uncheck the box "Colourize with highlighted buttons colour"
 - Go to the Window Outline Style and change the outline to 2.15, the opacity of active windows to 80% and of inactive windows to 55%
+- Go to the title bar settings under title bar opacity and adjust the title bar opacity, the same way as the window rules opacity (or however you prefer). The opacity for active is 85% and for inactive 90% in my case.
 
 ### Klassy Application Style:
 
 **General:**
 
 - Uncheck every box with "Draw.." (so, uncheck all boxes)
-
-## Install Papirus Icons
-
-1. Open the icon settings in Appearance in the KDE Plasma settings
-2. Click on "Get New"
-3. Search for "Papirus"
-4. Install the default "Papirus" icon theme and in the drop-down menu select the standard one called "papirus-icon-theme-versionnumber.tar.xz"
+- Under the transparency you can lower the transparency for your context menu.
 
 ## Konsole
 
 ### Change Font Size:
 
-1. Right-click the Konsole window and select "Edit Current Profile," then go to Appearance
+1. Right-click the `Konsole` window and select "Edit Current Profile," then go to Appearance
 2. Here you can change the font, I like to change it to the DejaVu Sans Mono font (11px).
 
 ### Editing the Top Bar:
 
-- Right-click the top bar of the Konsole and try to remove everything except the title bar
+- Right-click the top bar of the `Konsole` and try to remove everything except the title bar
 
 ## Editing the Taskbar/Panel
 
@@ -195,49 +173,129 @@ yay -S ttf-dejavu-sans-mono-powerline-git
 2. Disable the floating effect by changing the option to "Disabled." And enable the blur effect.
 3. Change the taskbar size to 28.
 
-### Make Windows Transparent
+# Setting up Transparency and Blur
 
-1. Go to Settings under Window Management and then to window rules
-2. Click on Add new and give the rule a name
-3. Then click the "Detect Window Properties" button and click on the window you want to make transparent
-4. Then add everything that is shown for the window in the rule
-5. After that manually add new window properties called "Opacity inactive" and "Opacity active"
-6. For Dolphin select opacity for active to 98 and for Konsole to 90 (keep inactive to 100)
+## Make windows transparent
 
-# General Things:
+- Go to system settings -> window management -> window rules
+- Add a new rule
+- Under add property you can add 'active opacity' and 'inactive opacity', here you can set the value however you like. I set active to 85% and inactive to 90%.
 
-### Fonts:
+### Make every window transparent
 
-https://fonts.google.com/specimen/Inter
+- In the new window rule set the window class to unimportant, and make sure you have set your opacity values.
 
-- I use the Semi Bold one
+### Make only specific windows transparent
+
+- In the new window rule set your opacity values (and make sure to not change the window class)
+- Then click the "Detect Window Properties" button and click on the window you want to make transparent.
+- Then add every value that will pop up for the specific window that you picked.
+
+## Blur everything
+
+- Install [Better Blur DX](https://github.com/xarblu/kwin-effects-better-blur-dx)
+- Follow the instructions in the repo for installation.
+- Then go to system settings -> window management -> window effects
+
+### Better blur settings
+
+- Go to the settings in the window effects screen for Better Blur DX
+- Under force blur settings select the option "blur everything except matching" and then check all the checkboxes (this will enable the blur properly for some reason).
+- Under general settings set the blur strength to level 7 and the blur noise to level 2 or change it to whatever you prefer.
+
+# General Setup:
+
+### Zsh:
+```
+sudo pacman -S zsh
+```
+``` 
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
+```
+chsh -s $(which zsh)
+```
+
+- In KDE Plasma with `Konsole` you need to right-click in the terminal window, then edit current profile and select the starting shell from /bin/bash to /bin/zsh)
+
+## Fonts
+
+### System Fonts
+
+[Lora](https://fonts.google.com/specimen/Lora)
+
+- I use the medium one
+
+[Inter](https://fonts.google.com/specimen/Inter)
+
+- I use the bold one
+- This is my secondary font, I use the Lora font mainly
+
+### Additional Fonts
+
+```
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+cd ..
+sudo rm -rf nerd-fonts
+```
+- This font will fix every icon, unicode and symbols.
+
+```
+yay -S ttf-dejavu-sans-mono-powerline-git
+```
+- The font I use for `Ptyxis` and `Konsole`
+
+### Icons
+
+- My primary icons are the **Tela Circle Icons**: go to the icon settings in Appearance in the KDE Plasma settings and click on get new, here you can search for every icon set
+- Secondarily I like these fonts:
+  - Papirus
+  - win11-purple-dark
+  - BeautySolar
 
 ### Mouse Cursor:
 
-- `yay -S breeze-snow-cursor-theme`
+Mainly I use the **MacOS Tahoe** one, you need to manually install these: https://store.kde.org/p/2300466
 
-### Icons:
+- In your home directory create a new folder **".icons"**
+- Put the **"MacOS-Tahoe-Cursor"** in the **.icons** folder
+- Now in the appearance settings you can change your mouse cursor to this one
 
+- Secondarily I also like other cursors:
+  - Babita cursor
+  - Breeze light cursor
+  - Modern winxp cursor
+
+## Browser Recommendations
+
+- Helium:
 ```
-yay tela-circle-icon-theme
+yay -S helium-browser-bin
 ```
 
-## Fonts:
-
+- Brave
 ```
-sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
-yay -S ttf-unifont ttf-symbola
+curl -fsS https://dl.brave.com/install.sh | sh
 ```
 
-## Screenshots
+## Fastfetch
 
-### KDE Plasma:
+- I saved [this](https://github.com/Nico-Shock/Custom-Hyprland-Configs/blob/main/Fastfetch) config for it.
+- To install you just need to create a config directory:
+```
+mkdir -p .config/fastfetch
+```
+- After that you need a config file
+```
+kate .config/fastfetch/config.jsonc
+```
+or
+```
+gedit .config/fastfetch/config.jsonc
+```
+- Just copy paste the content in that file and you're done.
 
-<img width="2558" height="1440" alt="Bildschirmfoto_20251207_155332" src="https://github.com/user-attachments/assets/bac1d7bd-1441-4444-8490-b50c4ec40c85" />
-
-### Gnome:
-
-<img width="2558" height="1440" alt="Bildschirmfoto_20251207_160046" src="https://github.com/user-attachments/assets/3137b72c-2b52-477f-8e57-beb8758dd682" />
-
-<img width="2559" height="1440" alt="Bildschirmfoto_20251207_160411" src="https://github.com/user-attachments/assets/95ab10ce-cad0-4c60-9167-94d42df60d05" />
-
+## SDDM
