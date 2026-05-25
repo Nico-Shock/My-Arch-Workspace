@@ -668,11 +668,8 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc</code></pre><bu
           <p class="note-block" style="margin-bottom:8px"><a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> &mdash; I use the medium one</p>
           <p class="note-block" style="margin-bottom:16px"><a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a> &mdash; I use the bold one. This is my secondary font, I use the Lora font mainly.</p>
           <p class="sub-heading">Additional Fonts</p>
-          <div class="code-block"><pre class="code-scroll"><code>git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-cd ..
-sudo rm -rf nerd-fonts</code></pre><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+          <div class="code-block"><pre class="code-scroll"><code>sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+yay -S ttf-unifont ttf-symbola</code></pre><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
           <p class="note-block" style="margin-bottom:16px">This font will fix every icon, unicode and symbols.</p>
           <div class="code-block"><pre class="code-scroll"><code>yay -S ttf-dejavu-sans-mono-powerline-git</code></pre><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
           <p class="note-block">The font I use for <span class="inline-code-teal">Ptyxis</span> and <span class="inline-code-teal">Konsole</span>.</p>
