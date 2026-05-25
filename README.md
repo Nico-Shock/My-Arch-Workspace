@@ -227,13 +227,10 @@ chsh -s $(which zsh)
 ### Additional Fonts
 
 ```
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-cd ..
-sudo rm -rf nerd-fonts
+sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+yay -S ttf-unifont ttf-symbola
 ```
-- This font will fix every icon, unicode and symbols.
+- These fonts will fix every icon, unicode and symbols.
 
 ```
 yay -S ttf-dejavu-sans-mono-powerline-git
